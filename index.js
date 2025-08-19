@@ -36,10 +36,10 @@ app.use("/api", apiRoutes);
 
 
 
-console.log('DB URL ->', JSON.stringify(process.env.DATABASE_URL));
+//console.log('DB URL ->', JSON.stringify(process.env.DATABASE_URL));
 try {
   const u = new URL(process.env.DATABASE_URL);
-  console.log('DB host ->', JSON.stringify(u.hostname));
+  //console.log('DB host ->', JSON.stringify(u.hostname));
 } catch(e) { console.error('Bad DATABASE_URL', e); }
 
 
